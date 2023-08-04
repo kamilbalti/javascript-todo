@@ -8,10 +8,10 @@ let head = "";
 document.getElementById("update").style.display = 'none';
 document.getElementById("clear").style.display = 'none';
 function submit(){
-    document.getElementById("clear").style.display = 'flex';
     if(document.getElementById("name").value == "" || document.getElementById("age").value == "")
     alert("The form is not complete Please fill all the requirement")
     else{
+        document.getElementById("clear").style.display = 'flex';
         head = `<p class='row'><span class='hiddenHead hide'>Index</span> <span class='hiddenHead'>Name</span> <span class='hiddenHead'>Age</span><span class='hide hiddenHead'></span></p>`
         dataObj.name = document.getElementById("name").value
         dataObj.age = document.getElementById("age").value
