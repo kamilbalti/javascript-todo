@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./todo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todoDiv">
+        <h1>Todo App</h1>
+            <div class="todoChildDiv"><p class="head">Name: </p><input onchange=change() id='name'/></div>
+            <div class="todoChildDiv"><p class="head">Age: </p><input onchange=change() id='age'/></div>
+            <div class="todoChildDiv todoButtonDiv">
+                <button id='but' type="submit" onclick="submit()">Submit</button>
+                <button id='update' onclick='update()'>Update</button>
+                <button id='clear' onclick='clearAll()' >Clear All</button>
+            </div>
+    </div>
+        <div class="resultDiv" id='div'></div>
+</body>
+<script src="./todo.js"></script>
+</html>

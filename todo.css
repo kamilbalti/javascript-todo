@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(145, 145, 145);
+    font-family: sans-serif;
+}
+.todoDiv{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 50%;
+    padding: 10px;
+}
+.todoChildDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.head{
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    width: 100px;
+}
+button{
+    background-color: black;
+    border: 1px solid black;
+    margin-left: 10px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+}
+span{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    word-break: break-all;
+    margin: 10px 0;
+}
+.hiddenHead{
+    font-size: 24px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.resultDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+.resultPara, .row, .para{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    background-color: white;
+    color: black;
+}
+.para{
+    width: 75% !important;
+}
+.delEditBut{
+    width: 25%;
+}
+.resultItem{
+    width: 33.33%;
+}
+@media screen and (max-width: 800px){
+    .resultDiv{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    span{
+        width: 50%;
+    }
+    .resultItem{
+        width: 50%;
+    }
+    .para{
+        width: 75% !important;
+    }
+    .todoDiv{
+        padding: 20px 10px;
+    }
+    .row{
+        display: flex;
+        width: 100%;
+    }
+    .resultDiv{
+        padding: 0 10px;
+    }
+    .resultPara{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;        
+    }
+    .para{
+        display: flex;
+        flex-direction: row;
+    }
+    .head{
+        width: 90px;
+    }
+    input{
+        width: 60%;
+    }
+    .hide{
+        display: none;
+    }
+    button{
+        padding: 10px;
+    }
+    .delEditBut{
+        width: 100%;
+    }
+}
